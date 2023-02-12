@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello World!</title>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="script-src 'self' 'unsafe-inline';"
+    />
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+    <p>
+      Hit Alt+Shift+I on Windows, or Opt+Cmd+I on mac to see a message printed
+      to the console.
+    </p>
+    <p>
+      Hit Alt+Ctrl+I on Windows or Opt+Cmd+I on Mac to see a message printed to
+      the console.
+    </p>
+    <p>Hit Ctrl+I to see a message printed to the console.</p>
+    <p>Right click the dock icon to see the custom menu options.</p>
+    <p>
+      Drag the boxes below to somewhere in your OS (Finder/Explorer, Desktop,
+      etc.) to copy an example markdown file.
+    </p>
+    <div
+      style="
+        border: 2px solid black;
+        border-radius: 3px;
+        padding: 5px;
+        display: inline-block;
+      "
+      draggable="true"
+      id="drag1"
+    >
+      Drag me - File 1
+    </div>
+    <div
+      style="
+        border: 2px solid black;
+        border-radius: 3px;
+        padding: 5px;
+        display: inline-block;
+      "
+      draggable="true"
+      id="drag2"
+    >
+      Drag me - File 2
+    </div>
+    <p>
+      After launching this application, you should see the system notification.
+    </p>
+    <p id="output">Click it to see the effect in this interface.</p>
+    <p>
+      Keep an eye on the dock (Mac) or taskbar (Windows, Unity) for this
+      application!
+    </p>
+    <p>It should indicate a progress that advances from 0 to 100%.</p>
+    <p>
+      It should then show indeterminate (Windows) or pin at 100% (other
+      operating systems) briefly and then loop.
+    </p>
+    <script src="renderer.js"></script>
+  </body>
+</html>
